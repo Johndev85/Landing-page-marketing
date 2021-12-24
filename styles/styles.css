@@ -80,3 +80,32 @@
   top: 0;
   right: 0;
 }
+
+.mid__img .img_persons {
+  position: relative;
+  z-index: 10;
+  width: 34rem;
+}
+
+.img_abstract {
+  width: 40rem;
+}
+
+.conter__mid_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid__img_bottom {
+  position: absolute;
+  top: 55%;
+  left: 80%;
+  z-index: 1;
+}
+
+.img_bars {
+  width: 50rem;
+  height: 6rem;
+}
