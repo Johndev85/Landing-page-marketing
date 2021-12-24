@@ -123,6 +123,8 @@
 }
 
 .card__conter {
+  position: relative;
+  z-index: 100;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -166,11 +168,31 @@
   width: 17rem;
 }
 
-.conter_bg-img {
-  width: 40%;
-  filter: linear-gradient(
+.conter_bg {
+  background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.89) 0%,
     rgba(239, 255, 253, 0.89) 100%
   );
+}
+
+.conter_bg-img {
+  position: relative;
+  z-index: 1;
+  left: 35rem;
+  bottom: 30rem;
+  width: 50%;
+  mix-blend-mode: darken;
+  filter: opacity(0.2);
+}
+
+.bottom__img {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer {
+  height: 30vh;
+  background: #000000;
 }
