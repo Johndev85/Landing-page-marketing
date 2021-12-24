@@ -64,7 +64,9 @@
                       required
                     />
                     <div class="valid-feedback"></div>
-                    <div class="invalid-feedback">Please provide a name.</div>
+                    <div class="invalid-feedback conter__validate">
+                      The field is required.
+                    </div>
                   </div>
                   <div class="col mb-3">
                     <input
@@ -75,8 +77,8 @@
                       required
                     />
                     <div class="valid-feedback"></div>
-                    <div class="invalid-feedback">
-                      Please provide a last name.
+                    <div class="invalid-feedback conter__validate">
+                      The field is required.
                     </div>
                   </div>
                 </div>
@@ -91,7 +93,9 @@
                       required
                     />
                     <div class="valid-feedback"></div>
-                    <div class="invalid-feedback">Please provide a email.</div>
+                    <div class="invalid-feedback conter__validate">
+                      The field is required.
+                    </div>
                   </div>
                   <div class="col mb-3">
                     <input
@@ -102,7 +106,9 @@
                       required
                     />
                     <div class="valid-feedback"></div>
-                    <div class="invalid-feedback">Please provide a job.</div>
+                    <div class="invalid-feedback conter__validate">
+                      The field is required.
+                    </div>
                   </div>
                 </div>
                 <div class="row">
@@ -135,7 +141,7 @@
                   </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="buttonStyles">Submit</button>
               </form>
             </div>
           </div>
@@ -169,10 +175,18 @@
               henceforth Wendy knew that she must grow up.
             </p>
             <div class="w-100 d-flex justify-content-left">
-              <button type="button" class="btn btn-primary px-5">
+              <button
+                type="button"
+                onclick="{openModal()}"
+                class="buttonStyles"
+              >
                 LOREM IPSUM
               </button>
-              <button type="button" class="btn btn-primary mx-3 px-5">
+              <button
+                type="button"
+                onclick="{openModal()}"
+                class="mx-4 buttonStyles2"
+              >
                 LOREM IPSUM
               </button>
             </div>
@@ -312,7 +326,108 @@
         </div>
       </footer>
     </main>
+
+    <!-- MODAL -->
+    <div class="col modal-disappear">
+      <form class="formConter needs-validation" novalidate>
+        <div class="row">
+          <div class="col mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="First Name*"
+              aria-describedby="firstName"
+              required
+            />
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Please provide a name.</div>
+          </div>
+          <div class="col mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last Name*"
+              aria-describedby="lastName"
+              required
+            />
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Please provide a last name.</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email*"
+              aria-describedby="email"
+              required
+            />
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Please provide a email.</div>
+          </div>
+          <div class="col mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Job title*"
+              aria-describedby="jobTitle"
+              required
+            />
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Please provide a job.</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Company Name"
+              aria-describedby="companyName"
+            />
+          </div>
+          <div class="col mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Website URL"
+              aria-describedby="websiteURL"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Annual Revenue"
+              aria-describedby="annualRevenue"
+            />
+          </div>
+        </div>
+        <div class="row w-100 d-flex justify-content-evenly">
+          <div class="col-4">
+            <button type="submit" class="buttonStyles">Submit</button>
+          </div>
+          <div class="col-4">
+            <button
+              type="button"
+              onclick="{closeModal()}"
+              class="buttonCloseStyle"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
     <script src="./scripts/formValidation.js"></script>
+    <script src="./scripts/modalControl.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

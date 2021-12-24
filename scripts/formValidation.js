@@ -11,8 +11,10 @@ const formValidation = () => {
         if (!form.checkValidity()) {
           event.preventDefault()
           event.stopPropagation()
+        } else {
+          alert("Thank you for your submission!")
+          console.log(event.target.values)
         }
-        console.log(event.target.value)
 
         form.classList.add("was-validated")
       },
