@@ -53,85 +53,85 @@
             </div>
 
             <div class="col">
-              <form class="form">
+              <form class="form needs-validation" novalidate>
                 <div class="row">
-                  <div class="col">
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="First Name*"
-                        aria-describedby="firstName"
-                      />
-                    </div>
+                  <div class="col mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="First Name*"
+                      aria-describedby="firstName"
+                      required
+                    />
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback">Please provide a name.</div>
                   </div>
-                  <div class="col">
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Last Name*"
-                        aria-describedby="lastName"
-                      />
+                  <div class="col mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Last Name*"
+                      aria-describedby="lastName"
+                      required
+                    />
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback">
+                      Please provide a last name.
                     </div>
                   </div>
                 </div>
 
                 <div class="row">
-                  <div class="col">
-                    <div class="mb-3">
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder="Email*"
-                        aria-describedby="email"
-                      />
-                    </div>
+                  <div class="col mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email*"
+                      aria-describedby="email"
+                      required
+                    />
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback">Please provide a email.</div>
                   </div>
-                  <div class="col">
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Job title*"
-                        aria-describedby="jobTitle"
-                      />
-                    </div>
+                  <div class="col mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Job title*"
+                      aria-describedby="jobTitle"
+                      required
+                    />
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback">Please provide a job.</div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col">
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Company Name"
-                        aria-describedby="companyName"
-                      />
-                    </div>
+                  <div class="col mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Company Name"
+                      aria-describedby="companyName"
+                    />
                   </div>
-                  <div class="col">
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Website URL"
-                        aria-describedby="websiteURL"
-                      />
-                    </div>
+                  <div class="col mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Website URL"
+                      aria-describedby="websiteURL"
+                    />
                   </div>
                 </div>
 
                 <div class="row">
-                  <div class="col">
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Annual Revenue"
-                        aria-describedby="annualRevenue"
-                      />
-                    </div>
+                  <div class="col mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Annual Revenue"
+                      aria-describedby="annualRevenue"
+                    />
                   </div>
                 </div>
 
@@ -312,5 +312,11 @@
         </div>
       </footer>
     </main>
+    <script src="./scripts/formValidation.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
