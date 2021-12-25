@@ -5,7 +5,7 @@
   --color-red: #ac5a5a;
   --color-red-dark: #eb5757;
   --color-gray: #3c3c3b;
-  --color-gray-mid: #a3a3a3;
+  --color-gray-mid: #868585;
   --color-gray-light: #e5e5e5;
   --color-text-light: #afafaf;
   --color-text-black: #000;
@@ -18,10 +18,24 @@
   );
 }
 
+@font-face {
+  font-family: "Avenir Next LT Pro Demi";
+  src: url("./assets/fonts/avenir-next-lt-pro-demi.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Avenir Next LT Pro Demi", sans-serif;
+  font-size: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .conter {
@@ -68,10 +82,10 @@
 }
 
 .conter__img--center {
-  width: 15rem;
+  width: 18rem;
   position: absolute;
   z-index: 1;
-  top: 0;
+  top: 2rem;
   right: calc(100% - 75%);
   color: var(--color-gray);
 }
@@ -176,13 +190,14 @@
 }
 
 .conter__mid_text h2 {
-  color: var(--color-purple);
+  color: var(--color-red);
   font-weight: bold;
 }
 
 .conter__mid_text p {
   padding: 2rem 0;
   line-height: 1.6rem;
+  color: var(--color-gray-mid);
 }
 
 .mid__img_bottom {
@@ -197,8 +212,15 @@
   height: 6rem;
 }
 
+.bottom_title {
+  font-weight: bold;
+  color: var(--color-red);
+  text-transform: uppercase;
+}
+
 .bottom__text {
-  padding: 0 20rem;
+  padding: 1rem 23rem;
+  color: var(--color-gray-mid);
 }
 
 .card__conter {
@@ -253,10 +275,10 @@
 .conter_bg-img {
   position: absolute;
   z-index: 1;
-  top: 25%;
-  left: 50%;
+  top: 10%;
+  left: 56%;
   bottom: 0;
-  width: 60%;
+  width: 66%;
   mix-blend-mode: darken;
   filter: opacity(0.2);
 }
@@ -272,6 +294,7 @@
   position: absolute;
   z-index: 10;
   top: 103rem;
+  right: 0.5rem;
   right: 0;
 }
 
@@ -306,6 +329,14 @@
   transition: transform 1s ease-out;
 }
 
+.tittle_modal {
+  margin: 1rem 0;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-red);
+}
+
 .modal-disappear {
   display: none;
   transition: transform 0.2s ease;
@@ -332,8 +363,19 @@
     left: 62%;
   }
 
+  .card__conter p {
+    width: 14rem;
+  }
+
   .buttonStyles {
     padding: 0.9rem 2rem;
+  }
+
+  .conter_bg-img {
+    top: 24%;
+    left: 43%;
+    bottom: 0;
+    width: 66%;
   }
 }
 
@@ -425,8 +467,9 @@
   }
 
   .card__conter {
-    width: 60% !important;
+    width: 40% !important;
   }
+
   .bars-one {
     top: -3.5rem;
   }
@@ -437,8 +480,8 @@
 
   .conter_bg-img {
     width: 100%;
-    top: 58%;
-    left: 0;
+    top: 59%;
+    left: 1rem;
     bottom: 0;
   }
 }
@@ -456,11 +499,20 @@
     width: 18rem;
   }
 
+  .conter_bg-img {
+    width: 69%;
+    top: 90%;
+    left: 8rem;
+    bottom: 0;
+  }
+
   .input__column_btn {
-    margin: 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .input__column_btn button {
+    margin-left: 0 !important;
   }
 
   .img_persons {
@@ -471,6 +523,10 @@
     display: none;
   }
 
+  .conter__mid_text {
+    padding: 3rem;
+  }
+
   .card__conter {
     width: 75% !important;
   }
@@ -479,5 +535,11 @@
     margin: 0;
     font-size: 1, 2rem;
     justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .conter__img--left {
+    width: 17rem;
   }
 }
