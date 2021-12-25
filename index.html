@@ -54,7 +54,7 @@
 
             <div class="col">
               <form class="form needs-validation" novalidate>
-                <div class="row">
+                <div class="row input__column">
                   <div class="col mb-3">
                     <input
                       type="text"
@@ -83,7 +83,7 @@
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row input__column">
                   <div class="col mb-3">
                     <input
                       type="email"
@@ -111,7 +111,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row">
+                <div class="row input__column">
                   <div class="col mb-3">
                     <input
                       type="text"
@@ -158,7 +158,7 @@
 
       <section class="container position-relative zi-5">
         <img
-          class="mb-4"
+          class="mb-4 img-abstract"
           src="./assets/images/abstract12 (1) 1 1.png"
           alt="img-abstract"
         />
@@ -176,7 +176,15 @@
                 ever!” This was all that passed between them on the subject, but
                 henceforth Wendy knew that she must grow up.
               </p>
-              <div class="w-100 d-flex justify-content-left midBtn">
+              <div
+                class="
+                  w-100
+                  d-flex
+                  justify-content-left
+                  midBtn
+                  input__column_btn
+                "
+              >
                 <button
                   type="button"
                   onclick="{openModal()}"
@@ -187,7 +195,7 @@
                 <button
                   type="button"
                   onclick="{openModal()}"
-                  class="mx-4 buttonStyles2"
+                  class="mx-4 buttonStyles2 input__column_btn"
                 >
                   LOREM IPSUM
                 </button>
@@ -358,7 +366,7 @@
     <!-- MODAL -->
     <div class="col modal-disappear">
       <form class="form needs-validation" novalidate>
-        <div class="row">
+        <div class="row input__column">
           <div class="col mb-3">
             <input
               type="text"
@@ -387,7 +395,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row input__column">
           <div class="col mb-3">
             <input
               type="email"
@@ -415,7 +423,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row input__column">
           <div class="col mb-3">
             <input
               type="text"
@@ -444,11 +452,11 @@
             />
           </div>
         </div>
-        <div class="row w-100 d-flex justify-content-evenly">
-          <div class="col-4">
+        <div class="row input__column_btn">
+          <div class="col">
             <button type="submit" class="buttonStyles">Submit</button>
           </div>
-          <div class="col-4">
+          <div class="col">
             <button
               type="button"
               onclick="{closeModal()}"

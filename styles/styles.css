@@ -26,6 +26,7 @@
 
 .conter {
   width: 100%;
+  min-width: 375px;
   height: auto;
   background: var(--color-gradient-bg-hero);
 }
@@ -384,6 +385,11 @@
     justify-content: center;
   }
 
+  .input__column_btn button {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
   .mid__img {
     padding: 2rem 0;
     display: flex;
@@ -434,5 +440,44 @@
     top: 58%;
     left: 0;
     bottom: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .hero__titles h1 {
+    font-size: 2rem;
+  }
+
+  .conter__img--center {
+    display: none;
+  }
+
+  .conter__img--left {
+    width: 18rem;
+  }
+
+  .input__column_btn {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img_persons {
+    width: 20rem !important;
+  }
+
+  .img-abstract {
+    display: none;
+  }
+
+  .card__conter {
+    width: 75% !important;
+  }
+  .social__icons {
+    width: 100%;
+    margin: 0;
+    font-size: 1, 2rem;
+    justify-content: space-around;
   }
 }
