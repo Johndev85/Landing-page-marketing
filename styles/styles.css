@@ -43,6 +43,9 @@ html {
   min-width: 375px;
   height: auto;
   background: var(--color-gradient-bg-hero);
+  animation-name: "fade-in";
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
 
 .conter__img--left {
@@ -212,6 +215,12 @@ html {
   height: 6rem;
 }
 
+.effect_fadeIn {
+  animation-name: "fade-in";
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
 .bottom_title {
   font-weight: bold;
   color: var(--color-red);
@@ -363,6 +372,10 @@ html {
     left: 62%;
   }
 
+  .img_bars {
+    width: 33rem;
+  }
+
   .card__conter p {
     width: 14rem;
   }
@@ -413,15 +426,15 @@ html {
     justify-content: center;
   }
 
-  .mid__text_conter h2 {
-    text-align: center;
-  }
-
   .mid__text_conter {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .mid__text_conter h2 {
+    text-align: center;
   }
   .midBtn {
     justify-content: center;
@@ -541,5 +554,16 @@ html {
 @media screen and (max-width: 390px) {
   .conter__img--left {
     width: 17rem;
+  }
+}
+
+/*----------------------------- ANIMATIONS---------------------------- */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
