@@ -351,9 +351,18 @@ html {
   transition: transform 0.2s ease;
 }
 
+.conter__social {
+  width: 100%;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .social__icons {
   width: fit-content;
   cursor: pointer;
+  margin: 0 1rem;
 }
 
 .social__icons:hover {
@@ -544,10 +553,7 @@ html {
     width: 75% !important;
   }
   .social__icons {
-    width: 100%;
-    margin: 0;
-    font-size: 1, 2rem;
-    justify-content: space-around;
+    width: 1.5rem;
   }
 }
 
