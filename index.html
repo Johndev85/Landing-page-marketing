@@ -36,7 +36,7 @@
             alt="img-center"
           />
 
-          <div class="row">
+          <div class="hero__block row">
             <div class="hero__titles col">
               <h1>
                 The way Mr. <br />
@@ -140,8 +140,9 @@
                     />
                   </div>
                 </div>
-
-                <button type="submit" class="buttonStyles">Submit</button>
+                <div class="conterBtn">
+                  <button type="submit" class="buttonStyles">Submit</button>
+                </div>
               </form>
             </div>
           </div>
@@ -155,40 +156,42 @@
 
       <!--MIDDLE SECTION  -->
 
-      <section class="container position-relative">
+      <section class="container position-relative zi-5">
         <img
           class="mb-4"
           src="./assets/images/abstract12 (1) 1 1.png"
           alt="img-abstract"
         />
-        <div class="row">
+        <div class="row mid__text_conter">
           <div class="col px-5 conter__mid_text">
-            <h2>PETER BREAKS THROUGH</h2>
-            <p>
-              All children, except one, grow up. They soon know that they will
-              grow up, and the way Wendy knew was this. One day when she was two
-              years old she was playing in a garden, and she plucked another
-              flower and ran with it to her mother. I suppose she must have
-              looked rather delightful, for Mrs. Darling put her hand to her
-              heart and cried, “Oh, why can’t you remain like this for ever!”
-              This was all that passed between them on the subject, but
-              henceforth Wendy knew that she must grow up.
-            </p>
-            <div class="w-100 d-flex justify-content-left">
-              <button
-                type="button"
-                onclick="{openModal()}"
-                class="buttonStyles"
-              >
-                LOREM IPSUM
-              </button>
-              <button
-                type="button"
-                onclick="{openModal()}"
-                class="mx-4 buttonStyles2"
-              >
-                LOREM IPSUM
-              </button>
+            <div>
+              <h2 class="my-2">PETER BREAKS THROUGH</h2>
+              <p>
+                All children, except one, grow up. They soon know that they will
+                grow up, and the way Wendy knew was this. One day when she was
+                two years old she was playing in a garden, and she plucked
+                another flower and ran with it to her mother. I suppose she must
+                have looked rather delightful, for Mrs. Darling put her hand to
+                her heart and cried, “Oh, why can’t you remain like this for
+                ever!” This was all that passed between them on the subject, but
+                henceforth Wendy knew that she must grow up.
+              </p>
+              <div class="w-100 d-flex justify-content-left midBtn">
+                <button
+                  type="button"
+                  onclick="{openModal()}"
+                  class="buttonStyles"
+                >
+                  LOREM IPSUM
+                </button>
+                <button
+                  type="button"
+                  onclick="{openModal()}"
+                  class="mx-4 buttonStyles2"
+                >
+                  LOREM IPSUM
+                </button>
+              </div>
             </div>
           </div>
           <div class="col d-flex justify-content-left mid__img">
@@ -227,7 +230,15 @@
             </div>
           </div>
         </div>
-        <div class="row row-cols-lg-4 gap-5 d-flex justify-content-center">
+        <div
+          class="
+            row row-cols-lg-4
+            gap-5
+            d-flex
+            justify-content-center
+            conter__cards
+          "
+        >
           <div class="col card__conter">
             <img
               class="bars-one"
@@ -297,8 +308,8 @@
         alt="img-city"
       />
       <footer class="footer">
-        <div class="row">
-          <div class="col my-4 text-center">
+        <div class="container">
+          <div class="col py-5 text-center">
             <img src="./assets/images/Lorem Ipsum.svg" alt="logo" />
           </div>
         </div>
@@ -308,17 +319,34 @@
         <div class="container">
           <div class="my-5 row justify-content-center align-items-center">
             <div class="col-1">
-              <img src="./assets/images/face-icon.svg" alt="facebook-icon" />
+              <a href="#">
+                <img
+                  class="social__icons"
+                  src="./assets/images/face-icon.svg"
+                  alt="facebook-icon"
+                />
+              </a>
             </div>
             <div class="col-1">
-              <img src="./assets/images/youtube-icon.svg" alt="youtube-icon" />
+              <a href="#">
+                <img
+                  class="social__icons"
+                  src="./assets/images/youtube-icon.svg"
+                  alt="youtube-icon"
+              /></a>
             </div>
             <div class="col-1">
-              <img src="./assets/images/linkedin-img.svg" alt="linkedin-icon" />
+              <a href="#">
+                <img
+                  class="social__icons"
+                  src="./assets/images/linkedin-img.svg"
+                  alt="linkedin-icon"
+                />
+              </a>
             </div>
           </div>
         </div>
-        <div class="w-100 text-center">
+        <div class="container text-center">
           <img
             src="./assets/images/horizontal-bars.png"
             alt="horizontal-bars"
@@ -329,7 +357,7 @@
 
     <!-- MODAL -->
     <div class="col modal-disappear">
-      <form class="formConter needs-validation" novalidate>
+      <form class="form needs-validation" novalidate>
         <div class="row">
           <div class="col mb-3">
             <input
@@ -340,7 +368,9 @@
               required
             />
             <div class="valid-feedback"></div>
-            <div class="invalid-feedback">Please provide a name.</div>
+            <div class="invalid-feedback conter__validate">
+              The field is required.
+            </div>
           </div>
           <div class="col mb-3">
             <input
@@ -351,7 +381,9 @@
               required
             />
             <div class="valid-feedback"></div>
-            <div class="invalid-feedback">Please provide a last name.</div>
+            <div class="invalid-feedback conter__validate">
+              The field is required.
+            </div>
           </div>
         </div>
 
@@ -365,7 +397,9 @@
               required
             />
             <div class="valid-feedback"></div>
-            <div class="invalid-feedback">Please provide a email.</div>
+            <div class="invalid-feedback conter__validate">
+              The field is required.
+            </div>
           </div>
           <div class="col mb-3">
             <input
@@ -376,7 +410,9 @@
               required
             />
             <div class="valid-feedback"></div>
-            <div class="invalid-feedback">Please provide a job.</div>
+            <div class="invalid-feedback conter__validate">
+              The field is required.
+            </div>
           </div>
         </div>
         <div class="row">
